@@ -1,0 +1,369 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* colors #77b6e2 (highlight) and #5993bb (standard) will give green aesthetic */
+
+
+/* body css defaults*/
+body { 
+    margin:0;
+    padding:0;
+    font-family:helvetica, sans-serif; 
+}
+
+/* heading font formatting 1 through 6 */
+h1, h2, h3, h4, h5 , h6 { 
+    font-family: 'Ubuntu', sans-serif; font-weight:normal;
+}
+
+/* link default*/
+a {
+    text-decoration:none;
+    color:#68bb59;
+}
+
+/* link hover */
+a:hover {
+    color:#abe277;
+}
+
+/* button default */
+a.button, input[type="submit"] {
+    color:#fff;
+    background:#68bb59;
+    border-radius:4px;
+    padding:10px 20px;
+    font-size:14px;
+    border:0;
+}
+
+/* button highlighted */
+a.button.light {
+    color:#666;
+    background:#ededed;
+}
+
+/* text manipulation move it left */
+.text-left {
+    text-align:left;
+}
+
+/* text manipulation move it right  */
+.text-right {
+    text-align:right;
+}
+
+/* make a table fill its space*/
+table {
+    width:100%;
+    border-spacing:0;
+    border-collapse: collapse; 
+}
+
+/* table defaults */
+table th, table td {
+    text-align:left;
+    font-size:14px;
+    padding:10px;
+    margin:0;
+}
+
+/* table additions management*/
+tbody tr:nth-child(odd) {
+    background:#efefef;
+}
+
+/* formatting for subtotal amount on table body */
+tbody tr.subtotal {
+    background:#ccc;
+}
+
+/* table title defaults */
+thead th, tbody tr.total {
+    background:#68bb59;
+    color:#fff;
+    font-weight:bold;
+}
+
+/* cart table aesthetics */
+table.cart {
+    margin-bottom:40px;
+}
+
+/* formatting the picture of the shopping cart */
+table.cart img {
+    width:180px;
+}
+
+/* making numbers conform to position */
+tbody td.num {
+    text-align:right;
+}
+
+/* input text formatting */
+td input[type="submit"] {
+    font-size:12px;
+    padding:4px 10px;
+}
+
+/* labels formatting for forms */
+form p label, form p input {
+    float:left;
+    clear:both;
+}
+
+/* text formatting for labels on forms */
+form p label {
+    font-size:14px;
+    padding-bottom:4px;
+}
+
+/* input text formatting on forms*/
+form p input {
+    width:300px;
+    font-size:13px;
+    margin-bottom:10px;
+    padding:10px 12px;
+    border:0;
+    background:#efefef;
+    color:#666;
+    border-radius:4px;
+}
+
+/* return list of user errors formatting */
+ul.errorlist {
+   float:left;
+   color:#ff0000;
+   clear:both;
+   font-size:13px;
+   margin:0; 
+   padding:0;
+}
+
+/* ID SELECTORS */
+
+/* header position manipulation */
+#header {
+    padding:10px 100px;
+    font-size:18px;
+    overflow:auto;
+}
+
+/* subheader position manipulation */
+#subheader {
+    background:#ececec;
+    color:#444;
+    padding:15px 100px;
+    overflow:auto;
+}
+
+/* header text formatting */
+#header .logo {
+    font-family: 'Ubuntu', sans-serif;
+    float:left;
+    color:#333;
+    font-size:22px;
+    margin-right:10%;
+}
+
+/* cart subheader positioning*/
+#subheader .cart {
+    float:right;
+    padding-top:4px;
+}
+
+/* general content positioning */
+#content {
+    padding:0 100px;
+    overflow:hidden;
+}
+
+/* side bar conforming to required position*/
+#sidebar {
+    width:220px;
+    padding:30px 20px 0 0;
+    float:left;
+}
+
+/* side bar bullet list margin/border default*/
+#sidebar ul{
+    margin:0;
+    padding:0;
+}
+
+/* side bar bullet list and numbered list adjustment */
+#sidebar ul li {
+    margin:0;
+    list-style:none;
+    padding:10px 14px;
+}
+
+/* side bar features put to block display as opposed to inline */
+#sidebar ul li a {
+    display:block;
+}
+
+/* sidebar selected items formatting */
+#sidebar ul li.selected {
+    background:#68bb59;
+    border-radius:4px;
+}
+
+/* seleted link formatting */
+#sidebar ul li.selected a {
+    color:#fff;
+}
+
+/* formatting of main ID */
+#main {
+    float:left;
+    width: 96%;
+    margin-right:-220px; 
+    overflow:hidden;
+}
+
+/* .CLASS SELECTORS */
+
+/* formats product list */
+.product-list .item {
+    width:25%;
+    padding:10px 20px 10px 0;
+    float:left;
+    text-align:center;
+    line-height:1.2;
+}
+
+/* formats product list images leaving a space at the bottom */
+.product-list .item img {
+    width:100%;
+    margin-bottom:8px;
+}
+
+/* ensures product detail text looks professional with justification */
+.product-detail {
+    text-align:justify;
+}
+
+/* emboldens the price for clarity */
+.product-detail .price {
+    color:#333;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* formats the product image on the detail screen */
+.product-detail img {
+    width:40%;
+    float:left;
+    padding:0 20px 20px 0;
+}
+
+/* detail main heading formatting */
+.product-detail h1 {
+    margin-bottom:0;
+}
+
+/* Secondard heading detail*/
+.product-detail h2 {
+    margin-top:10px;
+}
+
+/* positions the order form to the left */
+.order-form {
+    float:left;
+}
+
+/* formats the order details */
+.order-info {
+    float:right;
+    width:300px;
+    background:#efefef;
+    padding:10px 20px;
+    color:#333;
+    border-bottom:4px solid #68bb59;
+}
+
+/* sub heading color adjustment*/
+.order-info h3 {
+    color:#68bb59;
+}
+
+/* formats unordered and standard lists in terms of spacing */
+.order-info ul li {
+    margin:0;
+    padding:0;
+    font-size:14px;
+}
+
+/* formats paragraph text to bold and right-floated */
+.order-info p {
+    font-weight:bold;
+    float:right;
+}
+
+/* formats spands to the right */
+.order-info span {
+    float:right;
+}
+
+/* negates the propert of another class with a different color */
+.neg {
+    color:#dc1616;
+}
+
+/* formatting for recommender, restricts floating elements */
+.recommendations {
+    clear:both;
+}
+
+/* formatting recommender divisions */
+.recommendations div {
+    float:left;
+}
+
+/* formatting recommender image width */
+.recommendations img {
+    width:200px
+}
+
+/* restrcits floating elements for paragraphs */
+.recommendations p {
+    clear:both;
+}
+
+/* formats recommender text in cart view */
+.recommendations.cart {
+    width:60%;
+    float:left;
+    overflow:auto;
+}
+
+/* formats recommender title in cart */
+.recommendations.cart h3 {
+    margin-top:0;
+}
+
+/* sets margin for recommentation items in cart */
+.recommendations.cart .item {
+    margin-right:10px;
+}
+
+/* sets image width in cart view*/
+.recommendations.cart img {
+    width:120px;
+}
+
+/* Billing CSS */
+
+/* this is the braintree hosted fields for billing purposes */
+form div.field {
+    font-size:13px;
+    color:#666;
+    width:300px;
+    height:22px;
+    margin-bottom:10px;
+    padding:6px 12px;
+    border:0;
+    background:#efefef;
+    color:#666;
+    border-radius:4px;
+}
